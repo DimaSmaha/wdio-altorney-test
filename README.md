@@ -1,5 +1,5 @@
 # altorney-test
-## Test task login and exploratory flow for cypress
+## Test task login and exploratory flow on wdio+js
 
 ### Simple automated test with using of Page Object pattern. Test perfoms registration to website, and both positive and negative tests
 #### Requirements: Javascript,NodeJS,Webdriver.io,Mocha
