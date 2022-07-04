@@ -8,8 +8,9 @@
 - Download and install Node.JS (at least 14.X)(https://nodejs.org/uk/)
 - Install Visual Studio Code (https://code.visualstudio.com/)
 - Make new folder and open it in VS code
-- Open VS code terminal and clone repository git clone https://github.com/DimaSmaha/altorney-test
-- Run in terminal npm i to install all you needed
+- Open VS code terminal and clone repository `git clone https://github.com/DimaSmaha/altorney-test`
+- Run in terminal `cd .\altorney-test\`
+- Run in terminal `npm i` to install all you needed
 - Enter npm run wdio and launch tests
 
 #### Expected results: 
