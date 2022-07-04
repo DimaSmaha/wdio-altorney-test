@@ -1,5 +1,5 @@
 # altorney-test
-## Test task login and exploratory flow on wdio+js
+## Test task register flow on wdio+js
 
 ### Simple automated test with using of Page Object pattern. Test perfoms registration to website, and both positive and negative tests
 #### Requirements: Javascript,NodeJS,Webdriver.io,Mocha
@@ -11,7 +11,7 @@
 - Open VS code terminal and clone repository `git clone https://github.com/DimaSmaha/altorney-test`
 - Run in terminal `cd .\altorney-test\`
 - Run in terminal `npm i` to install all you needed
-- Enter npm run wdio and launch tests
+- Enter `npm run wdio` to launch tests
 
 #### Expected results: 
 - Tests to be ran successfully
