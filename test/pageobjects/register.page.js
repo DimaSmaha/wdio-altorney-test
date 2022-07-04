@@ -63,6 +63,10 @@ class RegisterPage extends Page {
         await this.getSubmitBtn
         .click();
     }
+
+    get getErrorLabel () {
+        return $('[class="p-error ng-star-inserted"]');
+    }
 }
 
 module.exports = new RegisterPage();

@@ -18,6 +18,19 @@ describe('Altorney tests', () => {
     await registerPage.clickSubmitBtn();
     await expect(browser).toHaveUrlContaining('https://test.altorney.com/register/success');
   });
+
+  it('should show error while you didnt pressed agree checkbox', async () => {
+    await homePage.open();
+    await homePage.clickJoinBtn();
+    await joinPage.clickReviewerBtn();
+    await registerPage.setFirstNameInputValue(registerPage.generateName());
+    await registerPage.setLastNameInputValue(registerPage.generateName());
+    await registerPage.setEmailInputValue(registerPage.generateName()+"@gmail.com");
+    await registerPage.setPasswordInputValue(password);
+    await registerPage.settConfirmPasswordInputValue(password);
+    await registerPage.clickSubmitBtn();
+    await expect(registerPage.getErrorLabel).toBeDisplayed()  
+  });
 });
 
 
