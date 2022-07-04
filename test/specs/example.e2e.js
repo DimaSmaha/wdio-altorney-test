@@ -16,7 +16,7 @@ describe('Altorney tests', () => {
     await registerPage.settConfirmPasswordInputValue(password);
     await registerPage.clickAgreeChb();
     await registerPage.clickSubmitBtn();
-    await expect(browser).toHaveUrlContaining('https://test.altorney.com/register/success');
+    await expect(browser).toHaveUrlContaining('https://test.altorney.com/register/success');    //Checks if we really successfully registered
   });
 
   it('should show error while you didnt pressed agree checkbox', async () => {
@@ -29,7 +29,7 @@ describe('Altorney tests', () => {
     await registerPage.setPasswordInputValue(password);
     await registerPage.settConfirmPasswordInputValue(password);
     await registerPage.clickSubmitBtn();
-    await expect(registerPage.getErrorLabel).toBeDisplayed()  
+    await expect(registerPage.getErrorLabel).toBeDisplayed();     //Checks that error was shown
   });
 });
 
